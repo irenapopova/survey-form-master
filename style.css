@@ -1,0 +1,145 @@
+:root{
+    --primary-color:#1E90FF;
+}
+body{
+    margin:0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+header{
+    background-color:var(--primary-color);    
+}
+header h1{
+    color: #FFFFFF;
+    margin: 0;
+    padding:1rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+footer{
+    padding:1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+footer a{
+color:#FF0088;
+}
+main{
+    color:var(--primary-color);
+    font-size: 1.2rem;
+}
+#description,.survey-question{
+    color: var(--primary-color);
+    margin:1rem;
+    font-size: 1rem;
+}
+.survey-question{
+    font-size: 1.4rem;
+}
+ /* peronal info section of form */
+.personal-info>li{
+    display:flex;
+    flex-flow:row wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.personal-info>li>label{
+    flex:1 1 120px;
+    max-width: 150px;  
+}
+.personal-info>li>input,select{
+    flex:1 1 200px;
+    padding:0.7rem;
+    border:1px solid rgb(135, 206, 235);
+    max-width: 300px;
+    color:#444444;
+    font-size: 1rem;
+     
+}
+.personal-info select{
+    max-width:322px;
+    background: transparent;
+    color:#444444;
+}
+li{
+    list-style-type:none;
+    padding:0.5rem;
+}
+
+li>select option{
+    color:#00622E;     
+}
+ 
+/*feed back quetions, comments and submit buttonx`*/
+.feedback-choice>li>label{
+    color:#555555;
+}
+ 
+.comments textarea{
+ border:1px solid rgb(135, 206, 235);
+ outline:none;
+ padding:1.2rem;
+ display: block;
+ margin:0 auto;
+}
+
+input:focus{
+    box-shadow: 0 0 5px 1px #1e90ff;
+    outline:none;
+}
+/*input validation*/
+input:focus:invalid {
+    outline:none;
+    box-shadow: 0 0 5px 1px rgba(228, 54, 54, 0.842);
+}
+.submit-btn{
+    color:var(--primary-color);
+    font-size:1.4rem;
+    text-align: center;
+     padding: 0.5rem;
+     background: #1e90ff; 
+     color:#fff;
+     width:300px;  
+     display: block;
+     margin:0 auto;
+     border:none;
+     border-radius:5px;
+}
+
+#submit:hover{
+    background:#0252a3;
+    color:#ffffff ;
+    transition: background 300ms ease-in;
+}
+
+@media (min-width: 1281px) {
+  
+    .container{
+        width: 70vw;
+        margin: 0 auto;
+        
+    }
+    main{
+        border:2px solid var(--primary-color); 
+    }
+    header h1{
+        padding:2rem;
+    }
+    textarea{
+        width:64%;
+    }
+    
+  }
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+    .container{
+        width: 60vw;
+        margin: 0 auto;
+        border:2px solid var(--primary-color); 
+    }
+    header h1{
+        padding:2rem;
+    }
+    
+  }
+ 
